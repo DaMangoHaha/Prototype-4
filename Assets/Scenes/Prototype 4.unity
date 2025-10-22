@@ -219,7 +219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_TagString
@@ -282,6 +282,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
+--- !u!1 &565923008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 130140363096382661, guid: b383125d2237e884689b4dc59c264165, type: 3}
+  m_PrefabInstance: {fileID: 8753291980378023217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &565923013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565923008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e5a2830c98b164e8070a0306c6eb6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpinObject
+  spinSpeed: 50
 --- !u!1 &1113950011
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +428,7 @@ MonoBehaviour:
   speed: 1
   hasPowerup: 0
   powerupIndicator: {fileID: 112721604}
+  powerupPrefab: {fileID: 130140363096382661, guid: b383125d2237e884689b4dc59c264165, type: 3}
 --- !u!54 &1113950017
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -834,6 +853,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   enemyPrefab: {fileID: 5320615677032118806, guid: 6f39028323e459745a57ad57f5a259e2, type: 3}
+  enemyCount: 0
+  waveNumber: 1
 --- !u!4 &1641555404
 Transform:
   m_ObjectHideFlags: 0
@@ -1011,7 +1032,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 130140363096382661, guid: b383125d2237e884689b4dc59c264165, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 565923013}
   m_SourcePrefab: {fileID: 100100000, guid: b383125d2237e884689b4dc59c264165, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
